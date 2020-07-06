@@ -14,6 +14,7 @@ const Layout = ({ location, title, children }) => {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          fontSize:rhythm(1.5),
         }}
       >
         <Link
@@ -48,6 +49,7 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
+    
     <div
       style={{
         marginLeft: `auto`,
@@ -55,11 +57,12 @@ const Layout = ({ location, title, children }) => {
         maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
-    >
+    > 
+    
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        ©Somkiet {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
